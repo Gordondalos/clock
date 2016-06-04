@@ -1,0 +1,73 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	background:#f9f9f9;
+	color:#000;
+	font:15px Calibri, Arial, sans-serif;
+	text-shadow:1px 2px 1px #FFFFFF;
+}
+a,
+a:visited
+{
+	text-decoration:none;
+	outline:none;
+	color:#fff;
+}
+a:hover
+{
+	text-decoration:underline;
+	color:#ddd;
+}
+
+     /*styling for the clock*/
+#clock
+{
+	position: relative;
+	width: 200px;
+	height: 300px;
+	list-style: none;
+	margin: 20px auto;
+	background: url('../images/clock.png') no-repeat center;
+	
+}
+#seconds,
+#minutes,
+#hours
+{
+	position: absolute;
+	width: 5px;
+	height: 303px;
+	left: 92px;
+}
+#date
+{
+	text-shadow:1px 2px 1px #000;
+	position: absolute;
+	top: 365px;
+	color:#fff;
+	right: 140px;
+	font:30px/36px Acens;
+	font-weight:bold;
+	letter-spacing:3px;
+}
+#hours
+{
+	background: url('../images/hands.png') no-repeat left;
+	z-index: 1000;
+}
+#minutes
+{
+	background: url('../images/hands.png') no-repeat center;
+	width:5px;
+	z-index: 2000;
+}
+
+#seconds
+{
+	background: url('../images/hands.png') no-repeat right;
+	z-index: 3000;
+}
